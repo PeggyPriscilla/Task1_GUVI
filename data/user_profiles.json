@@ -1,0 +1,27 @@
+[
+    {
+        "user_id": 1,
+        "age": 25,
+        "dob": "1998-05-15",
+        "contact": "555-1234",
+        "city": "TestCity",
+        "occupation": "Developer",
+        "company": "TestCorp",
+        "updated_at": "2025-07-21 00:19:23",
+        "_id": "687d878b27a0c",
+        "created_at": "2025-07-21 00:19:23"
+    },
+    {
+        "user_id": 2,
+        "age": 21,
+        "dob": "2025-07-03",
+        "contact": "34242342341",
+        "city": "Chennai",
+        "address": "LICET Boys Hostel, Loyola College Campus, Nungamba",
+        "occupation": "Software Engineer",
+        "company": "Blackstraw",
+        "updated_at": "2025-07-21 00:21:09",
+        "_id": "687d87f51366a",
+        "created_at": "2025-07-21 00:21:09"
+    }
+]

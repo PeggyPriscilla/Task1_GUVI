@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container d-flex align-items-center justify-content-center min-vh-100 py-4">
+    <div class="card shadow-lg p-4" style="max-width: 700px; width: 100%; border-top: 5px solid #0d47a1;">
+      <h2 class="text-center mb-4" style="color: #0d47a1;">User Profile</h2>
+      
+      <!-- User Info Display -->
+      <div class="text-center mb-4">
+        <h5>Welcome, <span id="user-name-display" class="fw-bold"></span>!</h5>
+        <p class="text-muted">Email: <span id="user-email-display"></span></p>
+      </div>
+
+      <!-- Profile Form -->
+      <form id="profile-form">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="profile_age" class="form-label">Age</label>
+            <input type="number" class="form-control" id="profile_age" min="1" max="120" placeholder="Enter your age">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="profile_dob" class="form-label">Date of Birth</label>
+            <input type="date" class="form-control" id="profile_dob">
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="profile_contact" class="form-label">Contact Number</label>
+            <input type="tel" class="form-control" id="profile_contact" placeholder="Enter contact number">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="profile_city" class="form-label">City</label>
+            <input type="text" class="form-control" id="profile_city" placeholder="Enter your city">
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="profile_address" class="form-label">Address</label>
+          <textarea class="form-control" id="profile_address" rows="2" placeholder="Enter your address"></textarea>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="profile_occupation" class="form-label">Occupation</label>
+            <input type="text" class="form-control" id="profile_occupation" placeholder="Enter your occupation">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="profile_company" class="form-label">Company</label>
+            <input type="text" class="form-control" id="profile_company" placeholder="Enter company name">
+          </div>
+        </div>
+
+        <div class="d-flex gap-2 justify-content-center mt-4">
+          <button type="submit" class="btn px-4" style="background-color: #0d47a1; color: white;">Update Profile</button>
+          <button type="button" id="logout-btn" class="btn btn-danger px-4">Logout</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="../js/profile.js"></script>
+</body>
+</html>
